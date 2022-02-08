@@ -1,0 +1,46 @@
+.add_page_container{
+    width: 400px;
+    margin: 20px auto;
+    .return_back {
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        svg{
+            margin-right: 4px;
+        }
+        margin-bottom: 28px;
+    }
+    h1{
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            font-size: 16px;
+
+            input{
+                height: 40px;
+                border-radius: 4px;
+            }
+        }
+        input[type="submit"]{
+            background-color: black;
+            color: #fff;
+            border-radius: 22px;
+            font-size: 24px;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 8px 8px;
+            width: 140px;
+            border:none;
+            align-self: end;
+        }
+    }
+}

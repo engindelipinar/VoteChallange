@@ -1,0 +1,83 @@
+.list_item{
+    min-height: 100px;
+    margin: 10px 0;
+    display: flex;
+    position: relative;
+    padding: 6px;
+    border:solid 1px #fff;
+
+    .point_box{
+        border-radius: 8px;
+        background-color: #c1c1c1;
+        border:solid 1px gray;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 96px;
+        height: 96px;
+
+        .point{
+            font-size: 42px;
+            font-weight: 700;
+        }
+    }
+
+    .description{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex: 2;
+        h3{
+            font-size: 20px;
+        }
+        span{
+            color: gray;
+        }
+        .vote_buttons {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+
+            span{
+                line-height: 20px;
+                display: flex;
+                cursor: pointer;
+
+                svg {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+    .remove{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+        cursor: pointer;
+
+        svg{
+            width: 24px;
+            background-color: #fff;
+            border-radius: 100%;
+        }
+    }
+
+    &:hover {
+        background-color: #e3e3e3;
+        border:solid 1px gray;
+        border-radius: 8px;
+        .remove {
+            display: block;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+    }
+}

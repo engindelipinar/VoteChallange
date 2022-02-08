@@ -1,0 +1,35 @@
+.add_item{
+    width: auto;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    border-radius: 8px;
+    background-color: #d5d5d5;
+    border:solid 1px gray;
+    padding: 6px;
+    text-decoration: none;
+
+    .icon_box{
+        background-color: #c1c1c1;
+        border-radius: 8px;
+        border:solid 1px gray;
+        display: flex;
+        font-size: 60px;
+        font-weight: 700;
+        width: 96px;
+        height: 96px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        flex: 3;
+        font-size: 28px;
+        font-weight: 600;
+    }
+}

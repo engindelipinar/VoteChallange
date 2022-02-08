@@ -1,0 +1,36 @@
+.list {
+    width: 400px;
+    margin: 0 auto;
+}
+.sort{
+    padding: 4px;
+    margin-left: 8px;
+    border-radius: 4px;
+    width: 160px;
+}
+
+.popup_content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.button_container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 24px;
+
+    button{
+        background-color: black;
+        color: #fff;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 4px 8px;
+        min-width: 90px;
+        border:none;
+    }
+}

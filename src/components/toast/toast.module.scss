@@ -1,0 +1,36 @@
+.toast{
+  display: flex;
+  justify-items: stretch;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  z-index: 1002;
+  width: auto;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 18px;
+  animation: show 0.5s ease forwards;
+
+  &.success{
+    background-color: #c7e6c9;
+    border: solid 1px #50a556;
+    color: #50a556;
+  }
+
+  &.error{
+    background-color: indianred;
+    border: solid 1px rgb(116, 13, 13);
+    color: rgb(116, 13, 13);
+  }
+  &.info{
+    background-color: #cacaad;
+    border: solid 1px #b5b80b;
+    color: #b5b80b;
+  }
+}
+
+@keyframes show {
+  from { right: -200px; }
+  to   { right: 20px; }
+}
